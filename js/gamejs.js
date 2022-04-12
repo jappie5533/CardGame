@@ -79,7 +79,7 @@ $(function () {
                 $(this).css('border-color','black');
                 
             })
-            $('.picture').prop('src', '/image/卡背.jpg');  //設定卡背
+            $('.picture').prop('src', './image/卡背.jpg');  //設定卡背
             $('.maincontent .picture').each(function (ind, ele) {
                 $('.maincontent').slideDown();  //卡片出現效果
                 $(this).prop('class', 'picture');  //重製卡片類別
