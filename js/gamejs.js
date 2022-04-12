@@ -1,6 +1,6 @@
 
 $(function () {
-    var Role = [{ roname: 'SSR 日向 翔陽', rosrc: '/image/日向.jpg' }, { roname: 'SSR 影山 飛雄', rosrc: '/image/影山.jpg' }, { roname: 'SR 澤村 大地', rosrc: '/image/大地.jpg' }, { roname: 'SR 菅原 孝支', rosrc: '/image/管員.jpg' }, { roname: 'SR田中 龍之介', rosrc: '/image/田中龍.jpg' }, { roname: 'R 東峰 旭', rosrc: '/image/旭.jpg' }, { roname: 'R 西谷 夕', rosrc: '/image/西谷.jpg' }, { roname: 'R 月島 蛍', rosrc: '/image/月島.jpg' }, { roname: 'R 山口 忠', rosrc: '/image/山口.jpg' }, { roname: 'N 吉祥物', rosrc: '/image/吉祥物.gif' }]
+    var Role = [{ roname: 'SSR 日向 翔陽', rosrc: '../image/日向.jpg' }, { roname: 'SSR 影山 飛雄', rosrc: '../image/影山.jpg' }, { roname: 'SR 澤村 大地', rosrc: '../image/大地.jpg' }, { roname: 'SR 菅原 孝支', rosrc: '../image/管員.jpg' }, { roname: 'SR田中 龍之介', rosrc: '../image/田中龍.jpg' }, { roname: 'R 東峰 旭', rosrc: '../image/旭.jpg' }, { roname: 'R 西谷 夕', rosrc: '../image/西谷.jpg' }, { roname: 'R 月島 蛍', rosrc: '../image/月島.jpg' }, { roname: 'R 山口 忠', rosrc: '../image/山口.jpg' }, { roname: 'N 吉祥物', rosrc: '../image/吉祥物.gif' }]
 
     $('.maincontent').hide();  //先把內容隱藏起來 
     var total = [];  //存取抽卡機率 基數是100個 SSR代表1 SR代表2 S代表3 N代表 放幾個進去就代表幾%
@@ -42,7 +42,7 @@ $(function () {
         if (btncount % 2 == 1) {  //如果按這倫第一次按鈕
             $('.ssrimg').remove();
             $('.allcontent .picture').off('click');//
-            playAudio("/music/抽卡.mp3");
+            playAudio("../music/抽卡.mp3");
             ranimg = [];  //儲存抽10次的結果
             ttcount++;
             totalcount=ttcount*10;  //計算目前抽卡總數
@@ -84,7 +84,7 @@ $(function () {
                 $('.maincontent').slideDown();  //卡片出現效果
                 $(this).prop('class', 'picture');  //重製卡片類別
                 $(this).on('click', function () {
-                    playAudio("/music/翻卡.mp3");
+                    playAudio("../music/翻卡.mp3");
                     $(this).siblings().show();
                     $(this).prop('src', Role[ranimg[ind]].rosrc);  //設定抽到的卡圖案
                     $(this).prop('class', 'picture turn ');  //增加反面效果
