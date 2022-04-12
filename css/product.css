@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body{
+    background-image: url(/image/介紹背景.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+header{
+    text-align: center;
+    color: white;
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+.content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: center;
+    width: 80vw;
+    border-radius: 5px;
+    
+}
+.roproduct{
+    display: flex;
+    padding: 10px;
+}
+.SSR{
+    color: gold;
+}
+.SR{
+    color: red;
+}
+.R{
+    color: gray;
+}
+.ro{
+    width: 70%;
+}
+.roimg{
+
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}

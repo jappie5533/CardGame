@@ -1,0 +1,141 @@
+@charset "UTF-8";
+body{
+    display: flex;
+    flex-direction: column;  
+    background-image: url(/image/背景2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+
+}
+.allcontent{
+    position: relative;
+    height: 50vw;
+    width: 80%;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin: auto;
+    /* grid-template-rows: 40% 40%; */
+    gap: 10px;
+    
+}
+.maincontent{
+    position: relative;
+    border: solid;
+    border-width: 4px;
+    border-color: black;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 3px;
+    
+   
+}
+.rotitle{
+    position: absolute;
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    color: black;
+    background-color: white;
+    font-weight: 5px;
+     left: 1px;
+     top: 0px;
+     box-sizing: content-box;
+     border-radius: 5px;
+}
+.turn{
+    transform: rotateY(360deg); 
+}
+img{
+    
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    cursor: pointer;
+    transition: all 0.6s;
+    perspective: 1000px;
+    transition: transform 0.5s;
+      
+}
+
+
+.header{
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    flex-grow: 1;
+}  
+
+div img:hover{
+    display: flex;
+    transform: scale(1.1);
+} 
+
+a:visited{
+    transform: rotateY(-180deg);   
+}
+h1{
+    text-align: center;
+}
+.navigation ul{
+    background: #000000;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+ul{
+    display: block;
+    
+}
+.ssrimg{
+    position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0.2;
+            z-index: 100;
+}
+.realrate{
+    position: fixed;
+    bottom: 60px;
+    left: 10px;
+}
+.footer{
+    
+    position: sticky;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 0px;
+}
+.footer div{
+    float: left;
+}
+.buttomdiv{
+    position: absolute;
+    
+    
+    right: 50px;
+    
+}
+#start{
+
+  height: 40px;
+  width: 50px;
+  margin-top: 3px;
+  font-size: 16px;
+}
+.count{
+    font-size: 24px;
+    color: white;
+}
+li{
+    display:inline;
+    color: white;
+    margin: 5px;
+
+}
+a{
+    color: white;
+    text-decoration:none;
+}
