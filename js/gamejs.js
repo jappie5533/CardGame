@@ -90,7 +90,7 @@ $(function () {
                     $(this).prop('class', 'picture turn ');  //增加反面效果
                     //下面把抽到的卡片邊框變色
                     if (ranimg[ind] == 1 || ranimg[ind] == 0) {
-                        $(this).before('<img class="ssrimg" src="/image/sparkles.gif" alt="">');
+                        $(this).before('<img class="ssrimg" src="./image/sparkles.gif" alt="">');
                         $(this).parent().css('border-color', 'gold')
                         playAudio("/music/SSR.mp3")
                     }
