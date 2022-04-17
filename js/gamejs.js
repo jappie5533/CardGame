@@ -115,7 +115,7 @@ $(document).ready(function(){
                    
                     $(this).siblings().hide();//如果抽到的是SSR先不要顯示名子
                     $(this).on('click', function () {
-                        playAudio("/music/SSR.mp3");
+                        playAudio("music/SSR.mp3");
                         $(this).siblings().show();//按下的時候顯示名子
                         $(this).prop('src', Role[ranimg[ind]].rosrc);
                         $(this).prop('class', 'picture turn ');
