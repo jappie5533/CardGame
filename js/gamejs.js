@@ -155,7 +155,7 @@ $(function () {
             var rounded = Math.round((rateR + Number.EPSILON) * 100) / 100;
             rateR=rounded;
             var rateN=(ncount/totalcount)*100
-            var rounded = Math.round((rate + Number.EPSILON) * 100) / 100;
+            var rounded = Math.round((rateN + Number.EPSILON) * 100) / 100;
             rateN=rounded;
 
             $('.totalcount').text(`已抽次數 :${totalcount}  `);
