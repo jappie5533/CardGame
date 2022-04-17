@@ -1,6 +1,5 @@
-
-$(function () {
-    var Role = [{ roname: 'SSR 日向 翔陽', rosrc: 'image/日向.jpg' }, { roname: 'SSR 影山 飛雄', rosrc: 'image/影山.jpg' }, { roname: 'SR 澤村 大地', rosrc: 'image/大地.jpg' }, { roname: 'SR 菅原 孝支', rosrc: 'image/管員.jpg' }, { roname: 'SR田中 龍之介', rosrc: 'image/田中龍.jpg' }, { roname: 'R 東峰 旭', rosrc: 'image/旭.jpg' }, { roname: 'R 西谷 夕', rosrc: 'image/西谷.jpg' }, { roname: 'R 月島 蛍', rosrc: 'image/月島.jpg' }, { roname: 'R 山口 忠', rosrc: 'image/山口.jpg' }, { roname: 'N 吉祥物', rosrc: 'image/吉祥物.gif' }]
+$(document).ready(function(){
+ var Role = [{ roname: 'SSR 日向 翔陽', rosrc: 'image/日向.jpg' }, { roname: 'SSR 影山 飛雄', rosrc: 'image/影山.jpg' }, { roname: 'SR 澤村 大地', rosrc: 'image/大地.jpg' }, { roname: 'SR 菅原 孝支', rosrc: 'image/管員.jpg' }, { roname: 'SR田中 龍之介', rosrc: 'image/田中龍.jpg' }, { roname: 'R 東峰 旭', rosrc: 'image/旭.jpg' }, { roname: 'R 西谷 夕', rosrc: 'image/西谷.jpg' }, { roname: 'R 月島 蛍', rosrc: 'image/月島.jpg' }, { roname: 'R 山口 忠', rosrc: 'image/山口.jpg' }, { roname: 'N 吉祥物', rosrc: 'image/吉祥物.gif' }]
 
     $('.maincontent').hide();  //先把內容隱藏起來 
     var total = [];  //存取抽卡機率 基數是100個 SSR代表1 SR代表2 S代表3 N代表 放幾個進去就代表幾%
@@ -171,4 +170,6 @@ $(function () {
         }
         btncount++;
     })
-});
+
+})
+
